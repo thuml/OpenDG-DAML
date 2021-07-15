@@ -1,7 +1,9 @@
 # OpenDG-DAML
  Code release for [Open Domain Generalization with Domain-Augmented Meta-Learning](https://arxiv.org/abs/2104.03620) (CVPR2021)
 
-## Dataset
+## Datasets
+
+* Here are some datasets you may need. PACS and Office-Home for the open domain generalization experiments on them. Office-31, STL-10, Visda2017 and DomainNet for the Multi-Datasets experiment.
 
 | Dataset | Link |
 | ------ | ------ |
@@ -12,6 +14,7 @@
 | Visda2017 | http://ai.bu.edu/visda-2017/ |
 | DomainNet | http://ai.bu.edu/M3SDA/ |
 
+* We provide the labels and train-val-test splits for these datasets in `data/` folder. 
 
 ## Requirements
 
@@ -21,7 +24,7 @@
 ## Quick Start
 
 * Download the DATASET you need. Move the `image_list` folder of the DATASET (which we provide in `data/DATASET/`) to the directory of the DATASET.
-* Complete the configuration of experiments, such as the path to the DATASET, then `bash run_train.sh` for training on source domains and testing on target domain data from known classes.
+* We provide scripts in `src/scripts/`. Complete the configuration of experiments, such as the path to the DATASET, then `bash run_train.sh` for training on source domains and testing on target domain data from known classes.
 * After training and saving the model checkpoints, `bash run_validate.sh` for testing on the whole target domain, including both known and unknown classes.
 
 ## Citation

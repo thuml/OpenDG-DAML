@@ -1,4 +1,4 @@
-# OpenDG-DAML
+# OpenDG: Open Domain Generalization
  Code release for [Open Domain Generalization with Domain-Augmented Meta-Learning](https://arxiv.org/abs/2104.03620) (CVPR2021)
 
 ## Datasets
